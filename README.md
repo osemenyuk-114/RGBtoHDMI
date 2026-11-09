@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD033 -->
 # RGBtoHDMI Hardware Variations & Replicas
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -13,21 +14,21 @@ This repository contains fully open-source hardware designs, KiCad schematics, P
 ## 📋 Included Board Designs
 
 ### 1. CPLD Hat V6a (12-Bit Digital RGB Interface)
+
 - **Hybrid V4/V6 Architecture:** Combines the compact design of V6 with enhanced physical durability.
 - **SMD Resistor Arrays:** Uses compact `0603 x 4` convex resistor arrays (RN1–RN8) instead of the bulky through-hole arrays from the upstream V4 design.
-- **Rugged THT Tactile Switches:** Uses standard 6 mm through-hole tactile pushbuttons (**Alps Alpine SKHHBVA010**) instead of SMD buttons. The small surface-mount pads on commercial V6 boards frequently tear off under repeated button presses during on-screen menu navigation; THT switches eliminate this issue.
-- **Automatic CPLD Programming:** The onboard Xilinx **XC9572XL-VQFP44** CPLD is automatically programmed directly by the Raspberry Pi bare-metal firmware upon boot—no separate JTAG programmer or manual intervention is required.
+- **Through-Hole Tactile Switches:** Uses standard, readily available 6 mm through-hole tactile pushbuttons (**Alps Alpine SKHHBVA010**) instead of SMD buttons. This change was directly motivated by real-world repair experience: when the buttons on a commercial V6 board failed, several delicate surface-mount pads tore off during desoldering, and finding identical replacement SMD switches proved difficult. THT switches make soldering, future replacements, and long-term maintenance significantly easier and more robust.
 - **Quick Links:** [Schematic (PDF)](Kicad_6Bit/v6a/rgb-to-hdmi.pdf) · [Interactive BOM](Kicad_6Bit/v6a/bom/ibom.html) · [Fabrication Files](Kicad_6Bit/v6a/manufacturing/)
 
 ### 2. HDMI Audio Adapter V2a (Audio Add-on Replica)
+
 - **100% Open Hardware Clean-Room Reverse Engineering:** The audio add-on was previously only distributed as closed commercial hardware without public schematics or Gerber files. This replica brings the hardware back into the open-source community. See also the related [RGBtoHDMI Open Audio project](https://github.com/drdpj/RGBtoHDMI-Open-Audio).
-- **Audio Digitization:** Based on the Texas Instruments **PCM1808PWR** 24-bit 96 kHz stereo audio ADC, a low-jitter **12.288 MHz** crystal oscillator, and 74LVC logic.
 - **Plug-and-Play:** Stacks directly onto header `P2` of the CPLD Hat to feed digital I2S audio into the Raspberry Pi Zero for embedding into the HDMI stream.
 - **Quick Links:** [Schematic (PDF)](Kicad_Audio_Adapter/v2a/rgbtohdmi-audio.pdf) · [Interactive BOM](Kicad_Audio_Adapter/v2a/bom/ibom.html) · [Fabrication Files](Kicad_Audio_Adapter/v2a/manufacturing/)
 
 ### 3. Analog Board V3a (Analog RGB/YUV Add-on)
+
 - **Cost-Optimized Design:** Compared with the upstream [V3 analog board](https://github.com/IanSB/RGBtoHDMI/tree/master/kicad_analog_6bit/V3), this revision replaces the expensive and hard-to-source `MAX9144` quad comparators with accessible, cost-effective `TC75W57FU` dual comparators.
-- **Intended Use:** Designed for video sources with a limited number of analog RGB/YUV levels or monochrome composite video (not intended for full-range analog RGB).
 - **Quick Links:** [Schematic (PDF)](Kicad_Analog_6bit/V3a/analog.pdf) · [Interactive BOM](Kicad_Analog_6bit/V3a/bom/ibom.html) · [Fabrication Files](Kicad_Analog_6bit/V3a/manufacturing/)
 
 ---
@@ -37,6 +38,7 @@ This repository contains fully open-source hardware designs, KiCad schematics, P
 Pre-generated, verified manufacturing files (Gerbers and Excellon drill files) are available in each board's `manufacturing/` directory.
 
 To order:
+
 1. Zip the files in the respective board's `manufacturing/` directory.
 2. Upload the `.zip` archive to your preferred PCB fabricator (e.g., JLCPCB, PCBWay, OSH Park).
 3. Recommended fabrication settings:
@@ -45,12 +47,11 @@ To order:
 | :--- | :--- |
 | **Layers** | 2 Layers |
 | **Base Material** | Standard FR4 |
-| **PCB Thickness** | 1.6 mm |
+| **PCB Thickness** | **1.6 mm** for CPLD Hat V6a & Analog Board V3a<br>**0.8 mm** for HDMI Audio Adapter V2a |
 | **Copper Weight** | 1 oz (35 µm) |
 | **Surface Finish** | **ENIG** (recommended for fine-pitch packages: PCM1808 TSSOP-14, XC9572XL VQFP-44) or **Lead-Free HASL** |
 | **Solder Mask** | Green (or preferred color) |
 | **Silkscreen** | White |
-| **Min Track / Spacing** | 6 / 6 mil |
 
 ---
 
@@ -66,6 +67,7 @@ To order:
 ## 🔍 Interactive BOMs
 
 Interactive HTML assembly guides allow you to easily highlight component placements and trace pads in your web browser:
+
 - 🔗 **CPLD Hat V6a:** [Kicad_6Bit/v6a/bom/ibom.html](Kicad_6Bit/v6a/bom/ibom.html)
 - 🔗 **HDMI Audio Adapter V2a:** [Kicad_Audio_Adapter/v2a/bom/ibom.html](Kicad_Audio_Adapter/v2a/bom/ibom.html)
 - 🔗 **Analog Board V3a:** [Kicad_Analog_6bit/V3a/bom/ibom.html](Kicad_Analog_6bit/V3a/bom/ibom.html)
