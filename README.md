@@ -76,75 +76,105 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
 
 ### BOM: [CPLD Hat V6a](Kicad_6Bit/v6a)
 
-| Ref Des | Value | Quantity | Package |
-| :--- | :--- | :---: | :--- |
-| **— Semiconductors —** | | | |
-| U1 | XC9572XL-VQFP44 | 1 | LQFP-44, 10 x 10 mm, 0.8 mm pitch |
-| D1, D2 | LED 3mm | 2 | 3 mm through-hole LED |
-| **— Resistors —** | | | |
-| R1, R2, R3, R4, R5, R6 | 1K | 6 | 0603 (1608 metric), SMD |
-| RN1, RN2, RN3, RN4 | 4K7 | 4 | 4 x 0603 resistor array (Convex) |
-| RN5, RN6, RN7, RN8 | 22R | 4 | 4 x 0603 resistor array (Convex) |
-| **— Capacitors —** | | | |
-| C1 | 10uF | 1 | 0805 (2012 metric), SMD |
-| C2, C3, C4 | 100nF | 3 | 0805 (2012 metric), SMD |
-| **— Switches —** | | | |
-| SW1, SW2, SW3, SW4 | Alps Alpine SKHHBVA010 | 4 | 6 mm tactile pushbutton, THT |
-| **— Sockets / Connectors —** | | | |
-| P1 | Wurth Elektronik 61304021821 | 1 | 2 x 20, 2.54 mm socket, vertical |
-| P2 | Samtec TSW-106-08-L-D-RA | 1 | 2 x 6, 2.54 mm pin header, right-angle |
-| P4 | Wurth Elektronik 61300211821 | 1 | 1 x 2, 2.54 mm socket, vertical |
-| P5 | Samtec SLW-105-01-T-D | 1 | 2 x 5, 2.54 mm socket, vertical |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="25%" align="left">Ref Des</th>
+      <th width="25%" align="left">Value</th>
+      <th width="10%" align="center">Quantity</th>
+      <th width="40%" align="left">Package</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th colspan="4" align="left">Semiconductors</th></tr>
+    <tr><td>U1</td><td>XC9572XL-VQFP44</td><td align="center">1</td><td>LQFP-44, 10 x 10 mm, 0.8 mm pitch</td></tr>
+    <tr><td>D1, D2</td><td>LED 3mm</td><td align="center">2</td><td>3 mm through-hole LED</td></tr>
+    <tr><th colspan="4" align="left">Resistors</th></tr>
+    <tr><td>R1, R2, R3, R4, R5, R6</td><td>1K</td><td align="center">6</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>RN1, RN2, RN3, RN4</td><td>4K7</td><td align="center">4</td><td>4 x 0603 resistor array (Convex)</td></tr>
+    <tr><td>RN5, RN6, RN7, RN8</td><td>22R</td><td align="center">4</td><td>4 x 0603 resistor array (Convex)</td></tr>
+    <tr><th colspan="4" align="left">Capacitors</th></tr>
+    <tr><td>C1</td><td>10uF</td><td align="center">1</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>C2, C3, C4</td><td>100nF</td><td align="center">3</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><th colspan="4" align="left">Switches</th></tr>
+    <tr><td>SW1, SW2, SW3, SW4</td><td>Alps Alpine SKHHBVA010</td><td align="center">4</td><td>6 mm tactile pushbutton, THT</td></tr>
+    <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
+    <tr><td>P1</td><td>Wurth Elektronik 61304021821</td><td align="center">1</td><td>2 x 20, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P2</td><td>Samtec TSW-106-08-L-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm pin header, right-angle</td></tr>
+    <tr><td>P4</td><td>Wurth Elektronik 61300211821</td><td align="center">1</td><td>1 x 2, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P5</td><td>Samtec SLW-105-01-T-D</td><td align="center">1</td><td>2 x 5, 2.54 mm socket, vertical</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ### BOM: [HDMI Audio Adapter V2a](Kicad_Audio_Adapter/v2a)
 
-| Ref Des | Value | Quantity | Package |
-| :--- | :--- | :---: | :--- |
-| **— Semiconductors —** | | | |
-| U1 | PCM1808PWR | 1 | TSSOP-14, 4.4 x 5 mm, 0.65 mm pitch |
-| U2 | 74LVC1G157 | 1 | SOT-363 (SC-70-6) |
-| U3, U4, U5 | 74LVC1G80 | 3 | SOT-353 (SC-70-5) |
-| **— Resistors —** | | | |
-| R1, R2 | 470R | 2 | 0603 (1608 metric), SMD |
-| R3, R5, R6 | 560R | 3 | 0603 (1608 metric), SMD |
-| R4, R7 | 4K7 | 2 | 0603 (1608 metric), SMD |
-| **— Capacitors —** | | | |
-| C1, C2 | 1uF | 2 | 0603 (1608 metric), SMD |
-| C3, C4, C12 | 10uF | 3 | 0603 (1608 metric), SMD |
-| C6, C7 | 10nF | 2 | 0603 (1608 metric), SMD |
-| C5, C8, C9, C10, C11 | 0.1uF | 5 | 0603 (1608 metric), SMD |
-| **— Oscillator —** | | | |
-| Y1 | 12.288 MHz | 1 | SMD oscillator, 4-pad, 3.2 x 2.5 mm |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="25%" align="left">Ref Des</th>
+      <th width="25%" align="left">Value</th>
+      <th width="10%" align="center">Quantity</th>
+      <th width="40%" align="left">Package</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th colspan="4" align="left">Semiconductors</th></tr>
+    <tr><td>U1</td><td>PCM1808PWR</td><td align="center">1</td><td>TSSOP-14, 4.4 x 5 mm, 0.65 mm pitch</td></tr>
+    <tr><td>U2</td><td>74LVC1G157</td><td align="center">1</td><td>SOT-363 (SC-70-6)</td></tr>
+    <tr><td>U3, U4, U5</td><td>74LVC1G80</td><td align="center">3</td><td>SOT-353 (SC-70-5)</td></tr>
+    <tr><th colspan="4" align="left">Resistors</th></tr>
+    <tr><td>R1, R2</td><td>470R</td><td align="center">2</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>R3, R5, R6</td><td>560R</td><td align="center">3</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>R4, R7</td><td>4K7</td><td align="center">2</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><th colspan="4" align="left">Capacitors</th></tr>
+    <tr><td>C1, C2</td><td>1uF</td><td align="center">2</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>C3, C4, C12</td><td>10uF</td><td align="center">3</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>C6, C7</td><td>10nF</td><td align="center">2</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><td>C5, C8, C9, C10, C11</td><td>0.1uF</td><td align="center">5</td><td>0603 (1608 metric), SMD</td></tr>
+    <tr><th colspan="4" align="left">Oscillator</th></tr>
+    <tr><td>Y1</td><td>12.288 MHz</td><td align="center">1</td><td>SMD oscillator, 4-pad, 3.2 x 2.5 mm</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ### BOM: [Analog Board V3a](Kicad_Analog_6bit/V3a)
 
-| Ref Des | Value | Quantity | Package |
-| :--- | :--- | :---: | :--- |
-| **— Semiconductors —** | | | |
-| D1 | MBR130LSFT1G | 1 | SOD-123 |
-| U1, U2, U3, U4, U5 | TC75W57FU | 5 | SSOP-8, 2.95 x 2.8 mm, 0.65 mm pitch |
-| U6 | TS5A3159ADBVR | 1 | SOT-23-6 |
-| U7 | 74LVC4066 | 1 | SOIC-14, 3.9 x 8.7 mm, 1.27 mm pitch |
-| U8 | MAX5259EEE+ | 1 | QSOP-16, 3.9 x 4.9 mm, 0.635 mm pitch |
-| U9 | MCP1754S-3302xCB | 1 | SOT-23 |
-| **— Resistors —** | | | |
-| R1 | 470R | 1 | 0805 (2012 metric), SMD |
-| R2, R3, R4 | 1K | 3 | 0805 (2012 metric), SMD |
-| R5 | 10K | 1 | 0805 (2012 metric), SMD |
-| R6, R7, R8 | 47K | 3 | 0805 (2012 metric), SMD |
-| R9, R10, R11 | 75R | 3 | 0805 (2012 metric), SMD |
-| **— Capacitors —** | | | |
-| C1, C2, C3, C4, C5 | 100nF | 5 | 0805 (2012 metric), SMD |
-| C6, C7, C8, C9 | 10uF | 4 | 0805 (2012 metric), SMD |
-| **— Sockets / Connectors —** | | | |
-| P1 | Samtec SSW-106-02-T-D-RA | 1 | 2 x 6, 2.54 mm socket, right-angle |
-| P2 | Samtec TLW-104-06-T-S | 1 | 1 x 4, 2.54 mm pin header, vertical |
-| P4 | IDC 6pin | 1 | 3-pin, 2.54 mm, horizontal, custom footprint |
-| P6, P7 | Samtec TLW-101-06-T-S | 2 | 1 x 1, 2.54 mm pin header, vertical |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="25%" align="left">Ref Des</th>
+      <th width="25%" align="left">Value</th>
+      <th width="10%" align="center">Quantity</th>
+      <th width="40%" align="left">Package</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th colspan="4" align="left">Semiconductors</th></tr>
+    <tr><td>D1</td><td>MBR130LSFT1G</td><td align="center">1</td><td>SOD-123</td></tr>
+    <tr><td>U1, U2, U3, U4, U5</td><td>TC75W57FU</td><td align="center">5</td><td>SSOP-8, 2.95 x 2.8 mm, 0.65 mm pitch</td></tr>
+    <tr><td>U6</td><td>TS5A3159ADBVR</td><td align="center">1</td><td>SOT-23-6</td></tr>
+    <tr><td>U7</td><td>74LVC4066</td><td align="center">1</td><td>SOIC-14, 3.9 x 8.7 mm, 1.27 mm pitch</td></tr>
+    <tr><td>U8</td><td>MAX5259EEE+</td><td align="center">1</td><td>QSOP-16, 3.9 x 4.9 mm, 0.635 mm pitch</td></tr>
+    <tr><td>U9</td><td>MCP1754S-3302xCB</td><td align="center">1</td><td>SOT-23</td></tr>
+    <tr><th colspan="4" align="left">Resistors</th></tr>
+    <tr><td>R1</td><td>470R</td><td align="center">1</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>R2, R3, R4</td><td>1K</td><td align="center">3</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>R5</td><td>10K</td><td align="center">1</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>R6, R7, R8</td><td>47K</td><td align="center">3</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>R9, R10, R11</td><td>75R</td><td align="center">3</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><th colspan="4" align="left">Capacitors</th></tr>
+    <tr><td>C1, C2, C3, C4, C5</td><td>100nF</td><td align="center">5</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><td>C6, C7, C8, C9</td><td>10uF</td><td align="center">4</td><td>0805 (2012 metric), SMD</td></tr>
+    <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
+    <tr><td>P1</td><td>Samtec SSW-106-02-T-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm socket, right-angle</td></tr>
+    <tr><td>P2</td><td>Samtec TLW-104-06-T-S</td><td align="center">1</td><td>1 x 4, 2.54 mm pin header, vertical</td></tr>
+    <tr><td>P4</td><td>IDC 6pin</td><td align="center">1</td><td>3-pin, 2.54 mm, horizontal, custom footprint</td></tr>
+    <tr><td>P6, P7</td><td>Samtec TLW-101-06-T-S</td><td align="center">2</td><td>1 x 1, 2.54 mm pin header, vertical</td></tr>
+  </tbody>
+</table>
 
 ---
 
