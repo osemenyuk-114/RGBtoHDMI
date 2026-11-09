@@ -81,10 +81,10 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
 <table width="100%">
   <thead>
     <tr>
-      <th width="25%" align="left">Ref Des</th>
-      <th width="25%" align="left">Value</th>
+      <th width="20%" align="left">Ref Des</th>
+      <th width="35%" align="left">Value</th>
       <th width="10%" align="center">Quantity</th>
-      <th width="40%" align="left">Package</th>
+      <th width="35%" align="left">Package</th>
     </tr>
   </thead>
   <tbody>
@@ -99,12 +99,12 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
     <tr><td>C1</td><td>10uF</td><td align="center">1</td><td>0805 (2012 metric), SMD</td></tr>
     <tr><td>C2, C3, C4</td><td>100nF</td><td align="center">3</td><td>0805 (2012 metric), SMD</td></tr>
     <tr><th colspan="4" align="left">Switches</th></tr>
-    <tr><td>SW1, SW2, SW3, SW4</td><td>Alps Alpine SKHHBVA010</td><td align="center">4</td><td>6 mm tactile pushbutton, THT</td></tr>
+    <tr><td>SW1, SW2, SW3, SW4</td><td>Alps Alpine<br>SKHHBVA010</td><td align="center">4</td><td>6 mm tactile pushbutton, THT</td></tr>
     <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
-    <tr><td>P1</td><td>Wurth Elektronik 61304021821</td><td align="center">1</td><td>2 x 20, 2.54 mm socket, vertical</td></tr>
-    <tr><td>P2</td><td>Samtec TSW-106-08-L-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm pin header, right-angle</td></tr>
-    <tr><td>P4</td><td>Wurth Elektronik 61300211821</td><td align="center">1</td><td>1 x 2, 2.54 mm socket, vertical</td></tr>
-    <tr><td>P5</td><td>Samtec SLW-105-01-T-D</td><td align="center">1</td><td>2 x 5, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P1</td><td>Wurth Elektronik<br>61304021821</td><td align="center">1</td><td>2 x 20, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P2</td><td>Samtec<br>TSW-106-08-L-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm pin header, right-angle</td></tr>
+    <tr><td>P4</td><td>Wurth Elektronik<br>61300211821</td><td align="center">1</td><td>1 x 2, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P5</td><td>Samtec<br>SLW-105-01-T-D</td><td align="center">1</td><td>2 x 5, 2.54 mm socket, vertical</td></tr>
   </tbody>
 </table>
 
@@ -115,10 +115,10 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
 <table width="100%">
   <thead>
     <tr>
-      <th width="25%" align="left">Ref Des</th>
-      <th width="25%" align="left">Value</th>
+      <th width="20%" align="left">Ref Des</th>
+      <th width="35%" align="left">Value</th>
       <th width="10%" align="center">Quantity</th>
-      <th width="40%" align="left">Package</th>
+      <th width="35%" align="left">Package</th>
     </tr>
   </thead>
   <tbody>
@@ -147,10 +147,10 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
 <table width="100%">
   <thead>
     <tr>
-      <th width="25%" align="left">Ref Des</th>
-      <th width="25%" align="left">Value</th>
+      <th width="20%" align="left">Ref Des</th>
+      <th width="35%" align="left">Value</th>
       <th width="10%" align="center">Quantity</th>
-      <th width="40%" align="left">Package</th>
+      <th width="35%" align="left">Package</th>
     </tr>
   </thead>
   <tbody>
@@ -171,10 +171,10 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
     <tr><td>C1, C2, C3, C4, C5</td><td>100nF</td><td align="center">5</td><td>0805 (2012 metric), SMD</td></tr>
     <tr><td>C6, C7, C8, C9</td><td>10uF</td><td align="center">4</td><td>0805 (2012 metric), SMD</td></tr>
     <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
-    <tr><td>P1</td><td>Samtec SSW-106-02-T-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm socket, right-angle</td></tr>
-    <tr><td>P2</td><td>Samtec TLW-104-06-T-S</td><td align="center">1</td><td>1 x 4, 2.54 mm pin header, vertical</td></tr>
+    <tr><td>P1</td><td>Samtec<br>SSW-106-02-T-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm socket, right-angle</td></tr>
+    <tr><td>P2</td><td>Samtec<br>TLW-104-06-T-S</td><td align="center">1</td><td>1 x 4, 2.54 mm pin header, vertical</td></tr>
     <tr><td>P4</td><td>IDC 6 pin</td><td align="center">1</td><td>2 x 3, 2.54 mm pin header, vertical</td></tr>
-    <tr><td>P6, P7</td><td>Samtec TLW-101-06-T-S</td><td align="center">2</td><td>1 x 1, 2.54 mm pin header, vertical</td></tr>
+    <tr><td>P6, P7</td><td>Samtec<br>TLW-101-06-T-S</td><td align="center">2</td><td>1 x 1, 2.54 mm pin header, vertical</td></tr>
   </tbody>
 </table>
 
