@@ -1,0 +1,328 @@
+(footprint "Harwin_M20-89003xx_1x03_P2.54mm_Horizontal_Custom_ODD2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Harwin Male Horizontal Surface Mount Single Row 2.54mm (0.1 inch) Pitch PCB Connector, M20-89003xx, 3 Pins per row (https://cdn.harwin.com/pdfs/M20-890.pdf), generated with kicad-footprint-generator")
+	(tags "connector Harwin M20-890 horizontal")
+	(property "Reference" "P4"
+		(at -8.73628 0.0113 270)
+		(layer "F.SilkS")
+		(uuid "e7535b80-d84c-4283-b353-4ca10619daa1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Conn_01x03_ODD"
+		(at -0.48 5.01 180)
+		(layer "F.Fab")
+		(uuid "1e6b08dc-3901-4951-972d-2639266094cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "f89e8fa8-96f1-4009-b096-0dd0b5bf4ec7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "b5687f5c-d634-4fc0-ab63-63c135abe114")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -8 -4)
+		(end -8 4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b526c7b-6b0a-40ac-b89b-0329ad580b1e")
+	)
+	(fp_line
+		(start -8 4)
+		(end -4 4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8d0ca8c0-220d-4c71-9a3f-c70277627385")
+	)
+	(fp_line
+		(start -4 -4)
+		(end -8 -4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "54182abf-3b1e-41b6-991f-c1b420d5e5be")
+	)
+	(fp_line
+		(start -4 -4)
+		(end -2.24 -4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ae5e8da-6e3c-44a1-9cec-d6735a526509")
+	)
+	(fp_line
+		(start -4 4)
+		(end -2.24 4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "31901586-9b78-47c4-85a8-6e82467a15cd")
+	)
+	(fp_line
+		(start -7.28 -4.31)
+		(end 7.28 -4.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "853f521c-73dc-43e1-b9c7-de997638045e")
+	)
+	(fp_line
+		(start -7.28 4.31)
+		(end -7.28 -4.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d94311da-12ab-43c2-8e4d-8b190f3df6eb")
+	)
+	(fp_line
+		(start 7.28 -4.31)
+		(end 7.28 4.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "304e31f8-a0f2-42ff-814a-807b9e2b8b29")
+	)
+	(fp_line
+		(start 7.28 4.31)
+		(end -7.28 4.31)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2ffe5e66-2124-4379-aa4c-5ba3ffd0378e")
+	)
+	(fp_line
+		(start -6.425 -2.86)
+		(end -6.425 -2.22)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4cb6369-8898-4d75-a773-a261a3205fd4")
+	)
+	(fp_line
+		(start -6.425 -2.22)
+		(end -1.725 -2.22)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c3ce94df-56c7-4891-88cc-40bd0eabb29e")
+	)
+	(fp_line
+		(start -6.425 -0.32)
+		(end -6.425 0.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0f94eaf0-9b97-404d-88be-82cfb4dc37d7")
+	)
+	(fp_line
+		(start -6.425 0.32)
+		(end -1.725 0.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e7db96a6-e37e-4c66-806c-e81d43d82534")
+	)
+	(fp_line
+		(start -6.425 2.22)
+		(end -6.425 2.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "58fac413-9ccc-4400-b8d8-96aaf0b55341")
+	)
+	(fp_line
+		(start -6.425 2.86)
+		(end -1.725 2.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a1763147-c9ea-4dee-be7c-a5e416f9483c")
+	)
+	(fp_line
+		(start -1.725 -3.41)
+		(end -1.325 -3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ac6b6d23-da76-4d56-9145-247a98873df2")
+	)
+	(fp_line
+		(start -1.725 -2.86)
+		(end -6.425 -2.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3f651ae3-7eea-48d1-9524-95218787f64a")
+	)
+	(fp_line
+		(start -1.725 -0.32)
+		(end -6.425 -0.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f9cc7270-4266-492f-b9b4-990f7cc1057a")
+	)
+	(fp_line
+		(start -1.725 2.22)
+		(end -6.425 2.22)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "83828ee0-15dd-4b96-affb-1ca7e746b29c")
+	)
+	(fp_line
+		(start -1.725 3.81)
+		(end -1.725 -3.41)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "86511d0d-d021-4376-8699-31e61d7e7789")
+	)
+	(fp_line
+		(start -1.325 -3.81)
+		(end 0.775 -3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e1176c88-60a1-4f5c-8068-bd590f19db4f")
+	)
+	(fp_line
+		(start 0.775 -3.81)
+		(end 0.775 3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b23b6acc-bf6a-4f10-8a6a-15a832c2c454")
+	)
+	(fp_line
+		(start 0.775 3.81)
+		(end -1.725 3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2209f5fc-a794-45c1-a5aa-b1f57e0c36c7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.48 0 90)
+		(layer "F.Fab")
+		(uuid "ce86f896-9250-4b57-9775-c304c9194582")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" connect rect
+		(at -4.9 -2.54)
+		(size 5.5 1.75)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "22271248-d18a-4399-96b2-c97635199d97")
+	)
+	(pad "3" connect rect
+		(at -4.9 0)
+		(size 5.5 1.75)
+		(layers "F.Cu" "F.Mask")
+		(uuid "89e05544-1998-4997-b33c-cf9fc7088164")
+	)
+	(pad "5" connect rect
+		(at -4.9 2.54)
+		(size 5.5 1.75)
+		(layers "F.Cu" "F.Mask")
+		(uuid "d4e3cc6d-4440-490a-875d-cad4f1ea85c3")
+	)
+	(embedded_fonts no)
+	(model "${KISYS3DMOD}/Connector_Harwin.3dshapes/Harwin_M20-89003xx_1x03_P2.54mm_Horizontal.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 13,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -53,7 +53,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffd575_ff5755f5",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffdfff",
     "zone_display_mode": 0
   },
   "git": {
@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "rgbtohdmi-audio-replica.kicad_prl",
+    "filename": "rgbtohdmi-audio.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -92,16 +92,16 @@
       9
     ],
     "col_widths": [
-      222,
-      207,
-      136,
-      92,
-      136,
-      136,
-      136,
-      98,
-      136,
-      136
+      370,
+      345,
+      227,
+      153,
+      227,
+      227,
+      227,
+      163,
+      227,
+      227
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

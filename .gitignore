@@ -1,6 +1,8 @@
 ~*
 fp-info-cache
-*-backups
-.history*
+*-backups/
+.history/
 *.bak
 *PCB*.png
+docs/
+not_in_git/

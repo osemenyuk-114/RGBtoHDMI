@@ -1,3 +1,4 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "rgbtohdmi-audio") (type "KiCad") (uri "${KIPRJMOD}/rgbtohdmi-audio.kicad_sym") (options "") (descr ""))
 )

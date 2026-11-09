@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.508,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
@@ -159,6 +175,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -170,6 +187,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -181,6 +199,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -257,7 +276,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "isolated_pin_label|2578100|330200|e7ce0d13-31dc-4ebc-a830-46eb9caca35c|00000000-0000-0000-0000-000000000000|/2ce31748-f87e-4607-8b75-98871a19bc7c||",
+        ""
+      ],
+      [
+        "isolated_pin_label|2578100|355600|45b74040-6ada-48da-a2a2-8abcff644432|00000000-0000-0000-0000-000000000000|/2ce31748-f87e-4607-8b75-98871a19bc7c||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -466,6 +494,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -501,7 +530,7 @@
         "microvia_drill": 0.3048,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "tuning_profile": "",
@@ -513,14 +542,13 @@
         "bus_width": 12,
         "clearance": 0.2032,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2032,
         "line_style": 0,
         "microvia_diameter": 0.6096,
         "microvia_drill": 0.3048,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
         "tuning_profile": "",
@@ -532,8 +560,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "Default",
@@ -576,7 +604,7 @@
         "pattern": "/G3"
       },
       {
-        "netclass": "Default",
+        "netclass": "Power",
         "pattern": "/GND"
       },
       {
@@ -755,6 +783,7 @@
       "netlist": "rgb-to-hdmi.net",
       "plot": "manufacturing/",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -891,7 +920,7 @@
         "uuid": "2ce31748-f87e-4607-8b75-98871a19bc7c"
       }
     ],
-    "used_designators": "SW2-6,J1",
+    "used_designators": "#PWR3-4,#PWR16-28,J1,SW2-6",
     "variants": []
   },
   "sheets": [

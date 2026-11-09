@@ -49,9 +49,10 @@
       "locked_item_shadows",
       "conflict_shadows",
       "shapes",
+      "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_f7f75f75",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_57fddf55",
     "zone_display_mode": 0
   },
   "git": {
@@ -90,16 +91,16 @@
       9
     ],
     "col_widths": [
-      222,
-      207,
-      136,
+      133,
+      124,
+      113,
       92,
-      136,
-      136,
-      136,
       98,
-      136,
-      136
+      115,
+      100,
+      98,
+      82,
+      82
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
