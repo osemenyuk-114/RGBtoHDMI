@@ -173,7 +173,7 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
     <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
     <tr><td>P1</td><td>Samtec SSW-106-02-T-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm socket, right-angle</td></tr>
     <tr><td>P2</td><td>Samtec TLW-104-06-T-S</td><td align="center">1</td><td>1 x 4, 2.54 mm pin header, vertical</td></tr>
-    <tr><td>P4</td><td>IDC 6pin</td><td align="center">1</td><td>3-pin, 2.54 mm, horizontal, custom footprint</td></tr>
+    <tr><td>P4</td><td>IDC 6 pin</td><td align="center">1</td><td>2 x 3, 2.54 mm pin header, vertical</td></tr>
     <tr><td>P6, P7</td><td>Samtec TLW-101-06-T-S</td><td align="center">2</td><td>1 x 1, 2.54 mm pin header, vertical</td></tr>
   </tbody>
 </table>
