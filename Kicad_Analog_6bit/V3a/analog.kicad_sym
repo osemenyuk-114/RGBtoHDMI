@@ -1225,7 +1225,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TC75W57FU"
+	(symbol "TLV3512DGKR"
 		(pin_names
 			(offset 0.127)
 		)
@@ -1244,7 +1244,7 @@
 				)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1319,7 +1319,7 @@
 				)
 			)
 		)
-		(symbol "TC75W57FU_1_1"
+		(symbol "TLV3512DGKR_1_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -1387,7 +1387,7 @@
 				)
 			)
 		)
-		(symbol "TC75W57FU_2_1"
+		(symbol "TLV3512DGKR_2_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -1455,7 +1455,7 @@
 				)
 			)
 		)
-		(symbol "TC75W57FU_3_1"
+		(symbol "TLV3512DGKR_3_1"
 			(pin power_in line
 				(at -2.54 -7.62 90)
 				(length 3.81)

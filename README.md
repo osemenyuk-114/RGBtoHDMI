@@ -28,7 +28,8 @@ This repository contains fully open-source hardware designs, KiCad schematics, P
 
 ### 3. Analog Board V3a (Analog RGB/YUV Add-on)
 
-- **Cost-Optimized Design:** Compared with the upstream [V3 analog board](https://github.com/IanSB/RGBtoHDMI/tree/master/kicad_analog_6bit/V3), this revision replaces the expensive and hard-to-source `MAX9144` quad comparators with accessible, cost-effective `TC75W57FU` dual comparators.
+- **Cost-Optimized Design:** Compared with the upstream [V3 analog board](https://github.com/IanSB/RGBtoHDMI/tree/master/kicad_analog_6bit/V3), this revision replaces the expensive and hard-to-source `MAX9144` quad comparators with accessible, cost-effective `TLV3512DGKR` dual comparators.
+- **⚠️ Untested:** This board has not been built or tested yet. The `TLV3512DGKR` comparators are much faster than the original `MAX9144` (about 6 ns vs. about 40 ns) and are comparable to the `GS8743` used on the V4 analog board (about 6 ns, 3 mV hysteresis). Build at your own risk.
 - **Quick Links:** [Schematic (PDF)](Kicad_Analog_6bit/V3a/analog.pdf) · [Interactive BOM](Kicad_Analog_6bit/V3a/bom/ibom.html) · [Fabrication Files](Kicad_Analog_6bit/V3a/manufacturing/)
 
 ---
@@ -156,7 +157,7 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
   <tbody>
     <tr><th colspan="4" align="left">Semiconductors</th></tr>
     <tr><td>D1</td><td>MBR130LSFT1G</td><td align="center">1</td><td>SOD-123</td></tr>
-    <tr><td>U1, U2, U3, U4, U5</td><td>TC75W57FU</td><td align="center">5</td><td>SSOP-8, 2.95 x 2.8 mm, 0.65 mm pitch</td></tr>
+    <tr><td>U1, U2, U3, U4, U5</td><td>TLV3512DGKR</td><td align="center">5</td><td>VSSOP-8 (DGK), 0.65 mm pitch</td></tr>
     <tr><td>U6</td><td>TS5A3159ADBVR</td><td align="center">1</td><td>SOT-23-6</td></tr>
     <tr><td>U7</td><td>74LVC4066</td><td align="center">1</td><td>SOIC-14, 3.9 x 8.7 mm, 1.27 mm pitch</td></tr>
     <tr><td>U8</td><td>MAX5259EEE+</td><td align="center">1</td><td>QSOP-16, 3.9 x 4.9 mm, 0.635 mm pitch</td></tr>

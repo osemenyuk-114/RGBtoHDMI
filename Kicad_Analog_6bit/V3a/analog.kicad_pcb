@@ -6728,7 +6728,7 @@
 				)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 2.600001 0)
 			(layer "F.Fab")
 			(uuid "d8a46fee-92f3-4461-9237-0db05be0deb3")
@@ -7018,7 +7018,7 @@
 				)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 2.600001 0)
 			(layer "F.Fab")
 			(uuid "5f9e3d97-bf39-4bcd-bf80-f7edd3fdfae3")
@@ -7308,7 +7308,7 @@
 				)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 2.600001 0)
 			(layer "F.Fab")
 			(uuid "b379d9f6-4cdd-4d23-b283-93bd888d7c19")
@@ -7598,7 +7598,7 @@
 				)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 2.600001 0)
 			(layer "F.Fab")
 			(uuid "bbe956a1-a810-422b-a6ac-90f31194f0eb")
@@ -8735,7 +8735,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TC75W57FU"
+		(property "Value" "TLV3512DGKR"
 			(at 0 -2.600001 0)
 			(layer "B.Fab")
 			(uuid "74ea67aa-abc9-489f-835a-f7e2e13d0196")
