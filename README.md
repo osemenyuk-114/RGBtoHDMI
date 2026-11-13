@@ -20,13 +20,25 @@ This repository contains fully open-source hardware designs, KiCad schematics, P
 - **Through-Hole Tactile Switches:** Uses standard, readily available 6 mm through-hole tactile pushbuttons (**Alps Alpine SKHHBVA010**) instead of SMD buttons. This change was directly motivated by real-world repair experience: when the buttons on a commercial V6 board failed, several delicate surface-mount pads tore off during desoldering, and finding identical replacement SMD switches proved difficult. THT switches make soldering, future replacements, and long-term maintenance significantly easier and more robust.
 - **Quick Links:** [Schematic (PDF)](Kicad_6Bit/v6a/rgb-to-hdmi.pdf) · [Interactive BOM](Kicad_6Bit/v6a/bom/ibom.html) · [Fabrication Files](Kicad_6Bit/v6a/manufacturing/)
 
-### 2. HDMI Audio Adapter V2a (Audio Add-on Replica)
+### 2. CPLD Hat V7a (12-Bit Digital RGB Interface, Soft Reset Option)
+
+Based on V6a (same functionality, through-hole switches, SMD resistor arrays, same BOM) with a choice of reset wiring. Assemble **one** of the two variants:
+
+| Variant | P4 | D3 | Reset button behavior |
+| :--- | :---: | :---: | :--- |
+| **A – V7 replica** | fitted | not fitted | Same as V6a: needs the Raspberry Pi reset mod (via `P4`) |
+| **B – Soft reset** | not fitted | fitted | Soft reset on reset button press; no modifications to the Pi required |
+
+- **Context:** In the upstream project, issues 5–7 are SMD-only and sold assembled; issue 6 adds series resistors on the inputs for minimal CPLD protection, and issue 7 adds the soft reset. Software reset is also possible on earlier issues by pressing SW1 & SW3.
+- **Quick Links:** [Schematic (PDF)](Kicad_6Bit/v7a/rgb-to-hdmi.pdf) · [Interactive BOM](Kicad_6Bit/v7a/bom/ibom.html) · [Fabrication Files](Kicad_6Bit/v7a/manufacturing/)
+
+### 3. HDMI Audio Adapter V2a (Audio Add-on Replica)
 
 - **100% Open Hardware Clean-Room Reverse Engineering:** The audio add-on was previously only distributed as closed commercial hardware without public schematics or Gerber files. This replica brings the hardware back into the open-source community. See also the related [RGBtoHDMI Open Audio project](https://github.com/drdpj/RGBtoHDMI-Open-Audio).
 - **Plug-and-Play:** Stacks directly onto header `P2` of the CPLD Hat to feed digital I2S audio into the Raspberry Pi Zero for embedding into the HDMI stream.
 - **Quick Links:** [Schematic (PDF)](Kicad_Audio_Adapter/v2a/rgbtohdmi-audio.pdf) · [Interactive BOM](Kicad_Audio_Adapter/v2a/bom/ibom.html) · [Fabrication Files](Kicad_Audio_Adapter/v2a/manufacturing/)
 
-### 3. Analog Board V3a (Analog RGB/YUV Add-on)
+### 4. Analog Board V3a (Analog RGB/YUV Add-on)
 
 - **Cost-Optimized Design:** Compared with the upstream [V3 analog board](https://github.com/IanSB/RGBtoHDMI/tree/master/kicad_analog_6bit/V3), this revision replaces the expensive and hard-to-source `MAX9144` quad comparators with accessible, cost-effective `TLV3512DGKR` dual comparators.
 - **⚠️ Untested:** This board has not been built or tested yet. The `TLV3512DGKR` comparators are much faster than the original `MAX9144` (about 6 ns vs. about 40 ns) and are comparable to the `GS8743` used on the V4 analog board (about 6 ns, 3 mV hysteresis). Build at your own risk.
@@ -48,7 +60,7 @@ To order:
 | :--- | :--- |
 | **Layers** | 2 Layers |
 | **Base Material** | Standard FR4 |
-| **PCB Thickness** | **1.6 mm** for CPLD Hat V6a & Analog Board V3a<br>**0.8 mm** for HDMI Audio Adapter V2a |
+| **PCB Thickness** | **1.6 mm** for CPLD Hat V6a/V7a & Analog Board V3a<br>**0.8 mm** for HDMI Audio Adapter V2a |
 | **Copper Weight** | 1 oz (35 µm) |
 | **Surface Finish** | **ENIG** (recommended for fine-pitch packages: PCM1808 TSSOP-14, XC9572XL VQFP-44) or **Lead-Free HASL** |
 | **Solder Mask** | Green (or preferred color) |
@@ -70,6 +82,7 @@ To order:
 Interactive HTML assembly guides allow you to easily highlight component placements and trace pads in your web browser:
 
 - 🔗 **CPLD Hat V6a:** [Kicad_6Bit/v6a/bom/ibom.html](Kicad_6Bit/v6a/bom/ibom.html)
+- 🔗 **CPLD Hat V7a:** [Kicad_6Bit/v7a/bom/ibom.html](Kicad_6Bit/v7a/bom/ibom.html)
 - 🔗 **HDMI Audio Adapter V2a:** [Kicad_Audio_Adapter/v2a/bom/ibom.html](Kicad_Audio_Adapter/v2a/bom/ibom.html)
 - 🔗 **Analog Board V3a:** [Kicad_Analog_6bit/V3a/bom/ibom.html](Kicad_Analog_6bit/V3a/bom/ibom.html)
 
@@ -77,7 +90,7 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
 
 ## 📊 Detailed Bills of Materials (BOM)
 
-### BOM: [CPLD Hat V6a](Kicad_6Bit/v6a)
+### BOM: CPLD Hat [V6a](Kicad_6Bit/v6a) / [V7a](Kicad_6Bit/v7a)
 
 <table width="100%">
   <thead>
@@ -92,6 +105,7 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
     <tr><th colspan="4" align="left">Semiconductors</th></tr>
     <tr><td>U1</td><td>XC9572XL-VQFP44</td><td align="center">1</td><td>LQFP-44, 10 x 10 mm, 0.8 mm pitch</td></tr>
     <tr><td>D1, D2</td><td>LED 3mm</td><td align="center">2</td><td>3 mm through-hole LED</td></tr>
+    <tr><td>D3 <sup>(V7a only)</sup></td><td>BAV70</td><td align="center">1</td><td>SOT-23 (see note below)</td></tr>
     <tr><th colspan="4" align="left">Resistors</th></tr>
     <tr><td>R1, R2, R3, R4, R5, R6</td><td>1K</td><td align="center">6</td><td>0603 (1608 metric), SMD</td></tr>
     <tr><td>RN1, RN2, RN3, RN4</td><td>4K7</td><td align="center">4</td><td>4 x 0603 resistor array (Convex)</td></tr>
@@ -104,10 +118,12 @@ Interactive HTML assembly guides allow you to easily highlight component placeme
     <tr><th colspan="4" align="left">Sockets / Connectors</th></tr>
     <tr><td>P1</td><td>Wurth Elektronik<br>61304021821</td><td align="center">1</td><td>2 x 20, 2.54 mm socket, vertical</td></tr>
     <tr><td>P2</td><td>Samtec<br>TSW-106-08-L-D-RA</td><td align="center">1</td><td>2 x 6, 2.54 mm pin header, right-angle</td></tr>
-    <tr><td>P4</td><td>Wurth Elektronik<br>61300211821</td><td align="center">1</td><td>1 x 2, 2.54 mm socket, vertical</td></tr>
+    <tr><td>P4 <sup>(V7a: variant A only)</sup></td><td>Wurth Elektronik<br>61300211821</td><td align="center">1</td><td>1 x 2, 2.54 mm socket, vertical</td></tr>
     <tr><td>P5</td><td>Samtec<br>SLW-105-01-T-D</td><td align="center">1</td><td>2 x 5, 2.54 mm socket, vertical</td></tr>
   </tbody>
 </table>
+
+> **Note (D3, V7a only):** Fit D3 (BAV70, SOT-23) only for the soft-reset variant B, and then leave P4 unpopulated. For variant A (V7 replica) fit P4 and omit D3. V6a has neither D3 nor the variant choice (P4 is always fitted).
 
 ---
 
