@@ -4070,16 +4070,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 154.94) (xy 205.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "267259e0-d9d6-4de1-ae5c-d51e147a86f2")
-	)
-	(wire
-		(pts
 			(xy 135.89 36.83) (xy 128.27 36.83)
 		)
 		(stroke
@@ -5070,6 +5060,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 157.48) (xy 210.82 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acf0e18b-1354-41da-bdf0-06b8929e0cb7")
+	)
+	(wire
+		(pts
 			(xy 24.13 187.96) (xy 31.75 187.96)
 		)
 		(stroke
@@ -5197,16 +5197,6 @@
 			(type default)
 		)
 		(uuid "be897366-7a48-485e-9d44-15642ed8f9e5")
-	)
-	(wire
-		(pts
-			(xy 83.82 157.48) (xy 210.82 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c05b4569-9436-4b61-b979-feee34f3a4cf")
 	)
 	(wire
 		(pts
@@ -5357,6 +5347,16 @@
 			(type default)
 		)
 		(uuid "cc6b574a-20ac-4c7b-b1fe-02f729c98d56")
+	)
+	(wire
+		(pts
+			(xy 83.82 154.94) (xy 205.74 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd0bcebc-04df-4bb7-99e1-3f05ce1a2e3d")
 	)
 	(wire
 		(pts
@@ -5739,7 +5739,7 @@
 		(uuid "0672fbf3-d22a-4158-8758-f020aa22f64a")
 	)
 	(label "CLAMPLVL"
-		(at 83.82 154.94 0)
+		(at 123.19 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6299,7 +6299,7 @@
 		(uuid "e195190f-7d49-47ba-8d78-fbc8fbad9f90")
 	)
 	(label "SPARE"
-		(at 83.82 157.48 0)
+		(at 123.19 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9403,7 +9403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 81.28 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9581,7 +9581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -9679,7 +9679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 246.38 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -9776,7 +9776,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 132.08 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -9874,7 +9874,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 246.38 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9972,7 +9972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10070,7 +10070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 127 0)
 			(hide yes)
 			(show_name no)
@@ -10247,7 +10247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 119.38 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -10424,7 +10424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 93.98 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -10602,7 +10602,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 246.38 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -10700,7 +10700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 246.38 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10798,7 +10798,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -10896,7 +10896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -10994,7 +10994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 185.42 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11091,7 +11091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 106.68 179.07 0)
 			(hide yes)
 			(show_name no)

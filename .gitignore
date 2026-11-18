@@ -1,4 +1,5 @@
 ~*
+build/
 fp-info-cache
 *-backups/
 .history/
