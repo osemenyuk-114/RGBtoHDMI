@@ -1,0 +1,72 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "rpi",
+            "displayName": "Raspberry Pi (standard)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/src/toolchain-arm-none-eabi-rpi.cmake",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "DEBUG": "OFF"
+            }
+        },
+        {
+            "name": "rpi4",
+            "displayName": "Raspberry Pi 4",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/src/toolchain-arm-none-eabi-rpi4.cmake",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "DEBUG": "OFF"
+            }
+        },
+        {
+            "name": "rpiA",
+            "displayName": "Raspberry Pi A / Zero",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/src/toolchain-arm-none-eabi-rpiA.cmake",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "DEBUG": "OFF"
+            }
+        },
+        {
+            "name": "rpiA4",
+            "displayName": "Raspberry Pi A4",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/src/toolchain-arm-none-eabi-rpiA4.cmake",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "DEBUG": "OFF"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "rpi",
+            "configurePreset": "rpi"
+        },
+        {
+            "name": "rpi4",
+            "configurePreset": "rpi4"
+        },
+        {
+            "name": "rpiA",
+            "configurePreset": "rpiA"
+        },
+        {
+            "name": "rpiA4",
+            "configurePreset": "rpiA4"
+        }
+    ]
+}

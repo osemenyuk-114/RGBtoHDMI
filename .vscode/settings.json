@@ -1,5 +1,5 @@
 {
     "cmake.useCMakePresets": "always",
     "cmake.configureOnOpen": false,
-    "cmake.sourceDirectory": "${workspaceFolder}/src"
+    "cmake.sourceDirectory": "${workspaceFolder}"
 }

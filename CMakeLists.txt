@@ -29,16 +29,19 @@
 
 # CMake 2.8.10 Documentation: http://www.cmake.org/cmake/help/v2.8.10/cmake.html
 
-cmake_minimum_required( VERSION 2.8 )
+cmake_minimum_required( VERSION 3.21 )
 
 # Mark the language as C so that CMake doesn't try to test the C++
 # cross-compiler's ability to compile a simple program because that will fail
 project( rgb_to_hdmi C ASM )
 
+set( FIRMWARE_SOURCE_DIR "${PROJECT_SOURCE_DIR}/src" )
+
 set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS}" )
 
 # Add any C compiler flags here. The C flags concerned with processor tuning
 # are in the toolchain files toolchain-arm-none-eabi-bcm2835.cmake, etc.
+set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu17" )
 set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2" )
 set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall" )
 set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostartfiles" )
@@ -53,10 +56,10 @@ set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --specs=nano.specs --specs=nosys.specs -u _
 
 #set( CMAKE_EXE_LINKER_FLAGS "-Wl,--gc-sections -Wl,--print-gc-sections -Wl,-unresolved-symbols=ignore-in-object-files -Wl,-T,${PROJECT_SOURCE_DIR}/rpi.ld" )
 
-set( CMAKE_EXE_LINKER_FLAGS "-Wl,--no-warn-rwx-segments,--gc-sections -Wl,-T,${PROJECT_SOURCE_DIR}/rpi.ld" )
+set( CMAKE_EXE_LINKER_FLAGS "-Wl,--no-warn-rwx-segments,--gc-sections -Wl,-T,${FIRMWARE_SOURCE_DIR}/rpi.ld" )
 
 
-file( GLOB core_files
+set( core_files
     armc-start.S
     armc-cstartup.c
     armc-cstubs.c
@@ -151,6 +154,7 @@ file( GLOB core_files
     jtag/update_cpld.h
 )
 
+list( TRANSFORM core_files PREPEND "${FIRMWARE_SOURCE_DIR}/" )
 
 if( ${DEBUG} )
 
@@ -174,11 +178,12 @@ add_custom_command(
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-add_custom_target(gitversion ALL)
-
-add_custom_command(
-    TARGET gitversion
-    COMMAND bash version.sh
+add_custom_target(gitversion ALL
+    COMMAND ${CMAKE_COMMAND}
+        -DPROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}
+        -DOUTPUT_FILE=${CMAKE_CURRENT_BINARY_DIR}/gitversion.h
+        -P ${FIRMWARE_SOURCE_DIR}/scripts/version.cmake
+    VERBATIM
 )
 
 add_dependencies(rgb-to-hdmi gitversion)
