@@ -1,0 +1,155 @@
+# =====================================================================
+# config.txt file for RGBtoHDMI (https://github.com/hoglet67/RGBtoHDMI)
+# =====================================================================
+
+# ===============
+# Default options
+# ===============
+
+# Disable automatic overclock of the Pi
+# bit 0 set = disable overclock of Pi1 & Pi2 from default speeds
+# bit 1 set = disable overclock options in settings menu
+# setting disable_overclock=3 will disable all overclocking
+disable_overclock=0
+
+# Boot quickly
+boot_delay=0
+
+# Disable adjusting the refresh rate of RAM every 500 ms
+disable_pvt=1
+
+# Don't allow ARM to use Level 2 Cache - this actually speeds up cache misses
+disable_l2cache=1
+
+# Enable VSYNC interrupt
+fake_vsync_isr=1
+
+# Clock frequency override to make sure we run at 1000MHz
+force_turbo=1
+
+# Stop undervolt detection from throttling the cpu
+avoid_warnings=2
+
+# Startup files, etc
+kernel_address=0x1f00000
+
+# =====================
+# Common video settings
+# =====================
+
+# Allow framebuffer to have it's aspect ratio warped when scaling
+# (needed for mode 7, 504x540 with 4/3 aspect ratio pixels)
+framebuffer_aspect=-1
+
+# Ensure default overscan values are 0 (rather than 32/48)
+# Without this, the integer scaling calculation will be messed up
+disable_overscan=1
+
+# Set the maximum framebuffer height to 4*2048
+# (the 4x is because we allow upto quadruple buffering)
+max_framebuffer_width=3840
+max_framebuffer_height=10240
+
+# Set to 1 to make hdmi use DPM standby instead of just blanking the screen
+hdmi_blanking=1
+
+# Set hdmi signal strength. (Valid values are 0-11)
+config_hdmi_boost=5
+
+# Set max pixel freq so higher resolutions work
+hdmi_pixel_freq_limit=175000000
+
+#auto_overscan=1
+
+# ======================
+# Settings for Pi Models
+# ======================
+[board-type=0x0f]
+# type 0x0f is unprogrammed otp so workaround by specifying pi0 v1.3
+force_board_rev=0x900093
+
+# Settings for Pi0
+[pi0]
+# default frequencies are 1000 / 400 / 450
+arm_freq=1000
+core_freq=400
+sdram_freq=450
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+# Settings for Pi0 2
+[pi02]
+# default frequencies are 1000/400/450
+arm_freq=1000
+core_freq=400
+sdram_freq=450
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+[pi1]
+# default frequencies are 700/250/400
+arm_freq=700
+core_freq=250
+sdram_freq=400
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+# Settings for Pi 2
+[pi2]
+# default frequencies are 900/250/400
+arm_freq=900
+core_freq=250
+sdram_freq=400
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+# Settings for Pi 3
+[pi3]
+# default frequencies are 1200/400/450
+arm_freq=1000
+core_freq=400
+sdram_freq=450
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+# Settings for Pi 3+
+[pi3+]
+# default frequencies are 1400/400/450
+arm_freq=1000
+core_freq=400
+sdram_freq=450
+start_file=start_cd.elf
+fixup_file=fixup_cd.dat
+kernel=kernelrpiA.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA_debug.img
+
+# Settings for Pi 4
+[pi4]
+# default frequencies are 1500/500/3200
+arm_freq=1000
+core_freq=500
+sdram_freq=3200
+start_file=start4cd.elf
+fixup_file=fixup4cd.dat
+kernel=kernelrpiA4.img
+# Debug kernel (needs a 115200 serial connection)
+#kernel=kernelrpiA4_debug.img
+
+# Do not manually add options below this line as they will be removed
+[all]

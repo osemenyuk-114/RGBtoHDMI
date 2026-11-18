@@ -1,0 +1,2 @@
+profile=Commodore/Amiga
+saved_profile=0
