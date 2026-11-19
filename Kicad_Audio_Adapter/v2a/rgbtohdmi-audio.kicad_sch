@@ -4706,7 +4706,7 @@
 		)
 		(uuid "0ec46471-5db0-4d45-92ad-04f075598458")
 	)
-	(label "Right"
+	(label "R"
 		(at 38.1 59.69 0)
 		(effects
 			(font
@@ -4746,7 +4746,7 @@
 		)
 		(uuid "61044bca-a81d-4c5c-8364-4c20b90fc7ce")
 	)
-	(label "Left"
+	(label "L"
 		(at 38.1 64.77 0)
 		(effects
 			(font
